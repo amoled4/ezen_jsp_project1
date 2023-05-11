@@ -1,0 +1,23 @@
+package service;
+
+import java.util.List;
+
+import domain.ProductVO;
+
+public interface Service {
+
+	int register(ProductVO pvo);
+
+	List<ProductVO> list();
+
+	ProductVO detail(int pno);
+
+	ProductVO modify(int pno2);
+	
+	int edit(int pno3, String pname1, int price1, String madeby1);
+	
+	int remove(int pno1);
+
+
+
+}

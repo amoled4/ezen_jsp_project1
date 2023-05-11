@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table, tr, th, td{
+		border: 1px solid black;
+		text-align: center;
+		border-collapse: collapse;
+	}
+	table{
+		width: 100%;
+	}
+</style>
+</head>
+<body>
+	<h1>제품 수정 페이지</h1>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>상품명</th>
+			<th>가격</th>
+			<th>등록날짜</th>
+			<th>세부내용</th>
+		</tr>
+		
+		<tr>
+			<td><input type="text" name=pname value="${pvo.pno }"></td>
+			<td><input type="text" name=pname value="${pvo.pname }"></td>
+			<td><input type="text" name=pname value="${pvo.price }"></td>
+			<td><input type="text" name=pname value="${pvo.regdate }"></td>
+			<td><input type="text" name=pname value="${pvo.madeby }"></td>
+		</tr>
+		
+	</table>
+	
+		<a href="list.jsp"><button type="button">수정 완료</button></a>
+		
